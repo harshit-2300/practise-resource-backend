@@ -25,6 +25,10 @@ const HitCount = require('./models/HitCount');
         console.log(sheets);
     })
 
+    app.get('/',async(req,res)=>{
+        res.send("It is working");
+    })
+
     app.get('/sheetNames', async (req, res) => {
         console.log("got a sheetNames request");
         let names = await Sheets.find({  });
