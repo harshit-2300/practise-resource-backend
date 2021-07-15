@@ -1,6 +1,7 @@
 const express = require('express');
 const app=express();
 var cors = require('cors')
+require('dotenv').config();
 
 const mongoose = require('mongoose');
 const uri = process.env.DATABASE_URL;
